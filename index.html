@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    This controls the name of the site(what you see in the tab)-->
+  <title>2017 WIT Job Shadow Program</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <style>
+      img{
+          height: 100%;
+          width: 100%;
+      }
+
+            img.cell{
+        height: 250px;
+          width: auto;
+      }
+                  img.tv{
+        height: 250px;
+          width: auto;
+      }
+            img.meme{
+          height:auto;
+          width: 100%;
+    
+      }
+            img.img2{
+          height: 50px;
+          width: auto;
+      }
+  body {
+/*  This is the font for the body part of the site*/
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+ h3 {font-family: 'Dancing Script', cursive; 
+     font-size: 40px;
+     margin:auto;
+      }
+
+h1.title_2{
+                color:white;
+          letter-spacing: 2px;
+      }
+h1{
+          color: #ffffff;
+      }
+ h1.title_1{
+          color:white;
+          letter-spacing: 2px;
+        margin-bottom: 50px;
+      }
+      h1.title_2{
+                color:white;
+          letter-spacing: 2px;
+          margin-bottom: 100px;
+      }
+            h1.title_3{
+                color:#555555;
+          letter-spacing: 2px;
+          margin-bottom: 100px;
+      }
+                  h1.title_4{
+                color:#ffffff;
+          letter-spacing: 2px;
+/*          margin-bottom: -70px;*/
+      }
+ h4{font-family: 'Permanent Marker', cursive; 
+     font-size: 150px; 
+     letter-spacing: 2px;
+      }
+
+  .bg-1 { 
+      background-image: url(IMAGES/watercolor.jpg);/* This is that watercolor background image in section 1 */
+      background-size: cover;
+      color: #ffffff;
+  }
+  .bg-2 { /* Dark Blue */
+      color: #ffffff;
+ background-color:  #ffb38a;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  
+  }
+  .bg-4 { 
+      background-color: #fa8598;/* pink background*/
+      color: #fff; /* white font*/
+  }
+        .bg-5 { 
+      background-color: #83d2d6;/* pink background*/
+      color: #fff; /* white font*/
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+      
+      div.scrollmenu {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+          width: 80%;
+          margin: auto;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+   
+}
+       .container {
+  
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 10px;
+      width: 25%;
+      height: 25%;
+      
+  }
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+    margin: auto;
+    padding-top: 10px;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+
+	width: 300px;
+	height: auto;
+    
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+      .bar {
+	width: 200px;
+	margin: 1px;
+	display: inline-block;
+	position: relative;
+	background-color: #aeaeae;
+      }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <img src="IMAGES/PWR!.png" class="img2" alt="Random Name">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#section1">WHO WE ARE</a></li>
+        <li><a href="#">COMPARE</a></li>
+        <li><a href="#">ADDITIONAL SECTION</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECTION ONE -->
+<div class="container-fluid bg-1 text-center" id="section1">
+<!--  This text is for the main title at the top-->
+  <h1 class="title_1">WIT Girls Job Shadow Program</h1>
+    
+<!--This controls the scroll pictures-->
+<div class="scrollmenu">
+<div class="container text-center">
+  <div class="row">
+      
+      
+      
+<!-- TODO TODO TODO
+Upload headshot photos to "Headshot" folder and change the file name to the girls picture(use square photo)
+img src = "this is where the photos of the girls will go. Put all headshots in the  Headshots folder"-->
+      <img src="Headshots/emily.jpg" class="img-circle person" alt="Random Name" width="150" height="250">
+   
+      <img src="Headshots/ginah.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+  
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+          
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255"> 
+
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+    
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+  
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+  
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+
+      <img src="Headshots/izzy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+  
+  </div>
+</div>
+</div>
+    
+<!--   You can change this to say whatever you want but I just chose an empowering female quote-->
+  <h3>the future is female</h3>
+</div>
+
+    
+    
+    
+<!-- SECTION 2: TOPIC 1-->
+<div class="container-fluid bg-2 text-center">
+    <!--   TOPIC 1 TITLE-->
+  <h1 class="title_1">CALL ME, BEEP ME</h1>
+    
+      <div class="row">
+    <div class="col-sm-5 text-center">
+<!--   TOPIC 1: CHOICE 1 CONTAINER-->
+      
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">      
+                <div class="front">  
+<!--             TOPIC 1: CHOICE 1 IMAGE  -->
+                    <img src="IMAGES/iphone.png" class="cell" alt="Random Name" >
+                </div> 
+                <div class="back">   
+   <!--             TOPIC 1: CHOICE 1 DESCRIPTION  -->     
+iPhone is a device presented by Apple Inc. performing the function of a mobile phone, MP3 player (iPod) and Instant Messenger, as it has been called by Apple Inc.
+
+The iPhone was first introduced by Steve Jobs on January 9, 2007 at the Macworld exhibition in San Francisco. After launching iPhone, Apple's shares were soaring.
+                </div>
+            </div>
+        </div>
+       
+          </div>
+       <div class="col-sm-2">
+           <br>
+          <h4>vs.</h4>
+          </div>    
+   <div class="col-sm-5 text-center">
+       <!--   TOPIC 1: CHOICE 2 CONTAINER-->
+               <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">      
+                <div class="front">  
+                    <!--   TOPIC 1: CHOICE 2 IMAGE-->
+                    <img src="IMAGES/android.png" class="cell" alt="Random Name">
+                </div> 
+                <div class="back">
+                    <!--   TOPIC 1: CHOICE 2 DESCRIPTION-->
+                Android is a mobile operating system developed by Google. It is used by several smartphones and tablets. Examples include the Sony Xperia, the Samsung Galaxy, and the Google Nexus One.
+                </div>
+            </div>
+        </div>
+          </div>     
+    </div>
+        
+</div>
+
+    
+    <!-- SECTION 3 -->
+<div class="container-fluid bg-3 text-center">
+  <!--   TOPIC 2 TITLE CONTAINER-->
+  <h1 class="title_3">BEST MEME</h1>
+    
+      <div class="row">
+    <div class="col-sm-5 text-center">
+        <!--   TOPIC 2: CHOICE 1 CONTAINER-->
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">      
+                <div class="front">  
+                    <!--   TOPIC 2: CHOICE 1 TITLE-->
+                     <img src="IMAGES/spongebob.jpeg" class="meme" alt="Random Name">
+                </div> 
+                <div class="back">
+                    <br>
+                    <!--   TOPIC 2: CHOICE 1 DESCRIPTION-->
+                       Netflix: Are you still watching?
+                    <br>Me: aRe U sTilL wAtcHiNg
+                </div>
+            </div>
+        </div>
+       
+          </div>
+       <div class="col-sm-2">
+           <br>
+          <h4>vs.</h4><br><br>
+          </div>    
+   <div class="col-sm-5 text-center">
+       <!--   TOPIC 2: CHOICE 2 CONTAINER-->
+              <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">      
+                <div class="front"> 
+                    <!--   TOPIC 2: CHOICE 2 IMAGE-->
+                    <img src="IMAGES/mrkrabs.jpg" class="meme" alt="Random Name">
+                </div> 
+                <div class="back">
+                    <br><br><br><br>
+                    <!--   TOPIC 2: CHOICE 2 DESCRIPTION-->
+                When your Mom leaves to go get eggs and the cashier says "Next"
+                </div>
+            </div>
+        </div>
+          </div>     
+    </div>       
+</div>
+    
+        <!-- SECTION 4 -->
+<div class="container-fluid bg-4 text-center">
+    <!--   TOPIC 3 TITLE-->
+  <h1 class="title_4">READY TO BINGE WATCH?</h1>
+    
+      <div class="row">
+          <!--   TOPIC 3: CHOICE 1 CONTAINER-->
+    <div class="col-sm-5 text-center">
+ <!--   TOPIC 3: CHOICE 1 IMAGE-->
+                     <img src="IMAGES/netflix.png" class="tv" alt="Random Name">
+   
+      
+       
+          </div>
+       <div class="col-sm-2">
+          <h4>vs.</h4>
+          </div>    
+          <!--   TOPIC 3: CHOICE 2 CONTAINER-->
+   <div class="col-sm-5 text-center">
+       <!--   TOPIC 3: CHOICE 2 IMAGE-->
+                    <img src="IMAGES/hulu.png" class="tv" alt="Random Name">
+     
+          </div>     
+    </div>
+        
+</div>
+    
+    
+    
+<!-- SECTION 3 -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">And the winner is...</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+        <!--   TOPIC 1 WINNER-->
+      <p>CELL PHONE</p>
+         <!--   TOPIC 1 WINNER IMAGE: Use same image as above-->
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+        
+         <!--   TOPIC 2 WINNER-->
+      <p>MEME</p>
+        <!--   TOPIC 2 WINNER IMAGE: Use same image as above-->
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+        
+         <!--   TOPIC 3 WINNER-->
+      <p>TV</p>
+        <!--   TOPIC 2 WINNER IMAGE: Use same image as above-->
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-5 text-center">
+  <p> Made with <span class="glyphicon glyphicon-heart"></span>  by WIT Girls</a></p> 
+</footer>
+
+</body>
+</html>
